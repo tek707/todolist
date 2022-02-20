@@ -1,0 +1,174 @@
+/* Import Google Font - Poppins */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  border-radius: 22px;
+  background: #e9e6e2;
+  box-shadow:  9px 9px 39px #cdcac7,
+               -9px -9px 39px #fffffd;
+}
+
+.container{
+ 
+  width:70%;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: height 0.2s ease;
+  border-radius: 22px;
+  border-radius: 22px;
+  background: #e9e6e2;
+  box-shadow:  13px 13px 26px #cdcac7,
+               -13px -13px 26px #fffffd;
+}
+
+.heading{
+  left: 50%;
+  padding: 20px 20px 20px 10px;
+  align-items: center;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ color:#ff9800;
+
+  
+}
+
+.mainpage{
+  margin: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ padding-left: 10px;
+  border: 1px  #ff9800 ;
+  border-radius: 22px;
+  background: #f2f0ee;
+  box-shadow:  13px 13px 26px #d5d3d1,
+               -13px -13px 26px #ffffff;
+}
+
+.editlist{
+  padding: 0px;
+
+float: right;
+
+border: none;
+
+}
+
+.cmdicons {
+  margin: 7px;
+  padding: 4px;
+border: none;
+width: 28px;
+height: 28px;
+
+}
+.cmdicons:hover {
+  margin: 7px;
+  padding: 4px;
+border:1px solid #ff9800;
+width: 28px;
+height: 28px;
+
+}
+
+.typo{
+  
+  font-size: 32px;
+  color: #ff9800;
+  margin: 10px;
+  padding: 20px 20px 20px 10px;
+}
+.date{
+  float: right;
+  margin: 5px;
+  padding-right: 14px;
+  font-size: 15px;
+  color: #ff9800;
+}
+
+hr{
+  height: 5px;
+  border-radius: 15px;
+background-color: #ff9800;
+}
+
+
+/* send list input and  button */
+.listcont{
+  width: 80%;
+  outline-width: 0;
+  border: none;
+  padding: 10px 15px;
+  margin:  15px;
+  border-radius: 999px;
+  background-color: #eff2f5;
+  color: #ff9800;
+  font-size: 22px;
+
+}
+.listcont:focus{
+ border:1px solid #ff9800;
+
+}
+.listcont:hover{
+  border:1px solid #ff9800;
+ 
+}
+
+.send{
+  align-items: center;
+  width: 90px;
+  height: 50px;
+  outline: none;
+  border-radius: 999px;
+  font-weight: 500;
+  font-size: 1rem;
+  border: none;
+  background: #eff2f5;
+  color: #fff;
+  transition:0.4s;
+}
+.send img{
+  border: none;
+  width: 25px;
+  
+}
+
+.send:hover{
+  border:1px solid #ff9800;
+
+}
+
+
+
+
+@media (max-width: 500px){
+ 
+.container{
+ 
+  width:90%;
+}
+
+.listcont{
+  width: 65%;
+   
+}
+
+.send{
+  width: 70px;
+  height: 50px;
+
+}
+
+}
