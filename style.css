@@ -6,7 +6,7 @@
   font-family: 'Poppins', sans-serif;
 }
 body{
-  
+  top: -10%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -18,8 +18,9 @@ body{
 }
 
 .container{
- 
-  width:70%;
+
+  width:60%;
+  height:600px;
   overflow: hidden;
   border-radius: 10px;
   transition: height 0.2s ease;
@@ -28,6 +29,12 @@ body{
   background: #e9e6e2;
   box-shadow:  13px 13px 26px #cdcac7,
                -13px -13px 26px #fffffd;
+}
+
+.scroll{
+  height:430px;
+overflow:auto;
+
 }
 
 .heading{
@@ -44,17 +51,124 @@ body{
 }
 
 .mainpage{
-  margin: 30px;
+  margin-left:10px;
+  margin-right: 10px;
+  margin-bottom: 15px;
   display: flex;
-  align-items: center;
-  justify-content: center;
- padding-left: 10px;
-  border: 1px  #ff9800 ;
-  border-radius: 22px;
+ 
+ width: 47%;
+ padding-left: 3px;
   background: #f2f0ee;
+ 
   box-shadow:  13px 13px 26px #d5d3d1,
                -13px -13px 26px #ffffff;
 }
+/* right message */
+.right{
+  float: right;
+  border-radius: 22px;
+  border-top-right-radius: 0px;
+  background: #ff9800;
+  color:#2e2d2be1;
+  box-shadow:  13px 13px 26px #d5d3d1, -13px -13px 26px #ffffff;
+            
+}
+.msg_right_text{
+  padding:40px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  padding: 2px 2px 2px 20px;
+}
+.msg_right_date{
+  padding-left: 310px;
+  margin: 1px;
+  font-size: 12px;
+  color:#2e2d2be1;
+}
+
+
+.right_msg_head{
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding: 3px;
+}
+
+.right_msg_avater {
+  width: 22px;
+  margin-left: 10px;
+}
+
+.msg_right_username {
+  font-size: medium;
+}
+
+
+
+
+/* end of right message */
+
+/* left message */
+.left{
+  
+  border-radius: 22px;
+  border-top-left-radius: 0px;
+  background: #fff;
+  color:#2e2d2be1;
+  box-shadow:  13px 13px 26px #d5d3d1, -13px -13px 26px #ffffff;
+            
+}
+.msg_left_text{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  padding: 2px 2px 2px 20px;
+}
+.msg_left_date{
+  padding-left: 310px;
+  margin: 1px;
+  font-size: 12px;
+  color:#2e2d2be1;
+
+}
+
+
+.left_msg_head{
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding: 3px;
+}
+
+.left_msg_avater {
+    width: 22px;
+  margin-right: 10px;
+}
+
+.msg_left_username {
+  font-size: medium;
+}
+
+
+/* end of left message */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .editlist{
   padding: 0px;
@@ -65,33 +179,17 @@ border: none;
 
 }
 
-.cmdicons {
-  margin: 7px;
-  padding: 4px;
-border: none;
-width: 28px;
-height: 28px;
 
-}
-.cmdicons:hover {
-  margin: 7px;
-  padding: 4px;
-border:1px solid #ff9800;
-width: 28px;
-height: 28px;
-
-}
 
 .typo{
   
-  font-size: 32px;
-  color: #ff9800;
-  margin: 10px;
-  padding: 20px 20px 20px 10px;
+  font-size: 15px;
+  margin: 3px;
+  padding: 2px 2px 2px 1px;
 }
 .date{
   float: right;
-  margin: 5px;
+  margin: 1px;
   padding-right: 14px;
   font-size: 15px;
   color: #ff9800;
@@ -149,11 +247,19 @@ background-color: #ff9800;
   border:1px solid #ff9800;
 
 }
+
+
 @media (max-width: 500px){
- 
 .container{
  
-  width:90%;
+  width:99%;
+  height:900px;
+}
+
+.scroll{
+  height:730px;
+overflow:auto;
+
 }
 
 .listcont{
@@ -165,6 +271,12 @@ background-color: #ff9800;
   width: 70px;
   height: 50px;
 
+}
+
+
+.mainpage{
+ 
+ width: 80%;
 }
 
 }
